@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="style1.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>COMIT | Helping You Keep Every Financial Commitment</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+<!-- <div class="logo-circle">
+C
+</div> -->
+<a href="index.html"><img src="/img/Image (7).jpeg" alt="COMIT Logo" class="logo"></a>
+
+<!-- <span>COMIT</span> -->
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">Solutions</a></li>
+
+<li><a href="#">How it Works</a></li>
+
+<li><a href="#">Partners</a></li>
+
+<li><a href="#">FAQ</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<!-- <a href="#" class="nav-btn">
+Join Waitlist
+</a> -->
+<a href="#" class="btn btn-primary" onclick="openModal()">
+Join Waitlist
+</a>
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-grid">
+
+<div class="hero-left">
+
+<p class="badge">
+
+Responsible Digital Lending
+
+</p>
+
+<h1>
+
+Helping You Keep Every
+
+<span>Financial Commitment.</span>
+
+</h1>
+
+<p class="hero-text">
+
+COMIT connects individuals with trusted RBI-regulated lending partners to help manage life's important financial commitments—from EMIs and rent to education, medical expenses, insurance premiums, and more.
+
+</p>
+
+<div class="hero-buttons">
+
+<!-- <a href="#" class="primary-btn">
+
+Check Eligibility
+
+</a> -->
+
+<!-- <a href="#" class="secondary-btn">
+
+Learn More
+
+</a> -->
+<a href="#waitlist" class="btn btn-primary">
+   Join Waitlist
+</a>
+<!-- <a href="#download-app" class="btn btn-outline">
+   Coming Soon
+</a> -->
+<a href="#download-app" class="btn btn-outline">
+   App Launching Soon
+</a>
+</div>
+
+<div class="hero-stats">
+
+<div>
+
+<h2>100%</h2>
+
+<p>Transparent</p>
+
+</div>
+
+<div>
+
+<h2>Secure</h2>
+
+<p>256-bit Encryption</p>
+
+</div>
+
+<div>
+
+<h2>Fast</h2>
+
+<p>Digital Process</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="phone">
+
+<div class="screen">
+
+<div class="loan-card">
+
+<h3>Eligible Amount</h3>
+
+<h1>₹50,000</h1>
+
+<button>
+
+Apply Now
+
+</button>
+
+</div>
+
+<div class="floating-card">
+
+EMI Due Tomorrow
+
+</div>
+
+<div class="floating-card2">
+
+Medical Support
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==============================
+Financial Commitments
+=============================== -->
+
+<section class="commitments">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Every Financial Commitment Matters</h2>
+
+<p>
+Whether it's your monthly EMI or an unexpected medical expense,
+COMIT helps you access responsible financial support through trusted lending partners.
+</p>
+
+</div>
+
+<div class="commitment-grid">
+
+<div class="commitment-card">
+
+<div class="icon">🏠</div>
+
+<h3>House Rent</h3>
+
+<p>Pay rent on time without financial stress.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">🚗</div>
+
+<h3>Vehicle EMI</h3>
+
+<p>Never miss your car or bike EMI.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">🏡</div>
+
+<h3>Home Loan EMI</h3>
+
+<p>Stay on track with your home loan commitments.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">🎓</div>
+
+<h3>Education</h3>
+
+<p>Support tuition fees and educational expenses.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">🏥</div>
+
+<h3>Medical</h3>
+
+<p>Handle healthcare expenses when they matter most.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">🛡️</div>
+
+<h3>Insurance</h3>
+
+<p>Never miss an important insurance premium.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">💳</div>
+
+<h3>Credit Card Bills</h3>
+
+<p>Manage repayments responsibly and avoid penalties.</p>
+
+</div>
+
+<div class="commitment-card">
+
+<div class="icon">📱</div>
+
+<h3>Essential Purchases</h3>
+
+<p>Finance important purchases with confidence.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<div id="waitlistModal" class="modal">
+    <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <h2>Join COMIT Waitlist</h2>
+
+    <p>
+        Be among the first to experience COMIT.
+        Get notified when we launch.
+    </p>
+
+    <form id="waitlistForm">
+
+        <input
+            type="text"
+            placeholder="Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="tel"
+            placeholder="Mobile Number" maxlength="10" pattern="[0-9]{10}"
+            required
+        >
+
+        <label class="checkbox">
+
+            <input type="checkbox" required>
+
+            I agree to receive updates from COMIT.
+
+        </label>
+
+        <button type="submit">
+            Join Waitlist
+        </button>
+
+    </form>
+
+</div>
+</div>
+
+<footer class="footer">
+
+   <div class="footer-container">
+
+       <div class="footer-brand">
+
+           <!-- <img src="images/logo.png" alt="COMIT"> -->
+<a href="index.html"><img src="/img/Image (7).jpeg" alt="COMIT Logo" class="logo"></a>
+           <p>
+               Helping people keep every financial commitment through trusted RBI-regulated lending partners.
+           </p>
+
+       </div>
+
+       <div class="footer-links">
+
+           <h4>Company</h4>
+
+           <a href="#">About</a>
+           <a href="#">How it Works</a>
+           <a href="#">Waitlist</a>
+           <a href="#">Contact</a>
+
+       </div>
+
+       <div class="footer-links">
+
+           <h4>Legal</h4>
+
+           <a href="#">Privacy Policy</a>
+           <a href="#">Terms & Conditions</a>
+           <a href="#">Cookie Policy</a>
+           <a href="#">Disclaimer</a>
+
+       </div>
+
+       <div class="footer-links">
+
+           <h4>Support</h4>
+
+           <a href="mailto:founder@comit.in">founder@comit.in</a>
+
+           <a href="mailto:support@comit.in">support@comit.in</a>
+
+       </div>
+
+       <!-- <div class="footer-links">
+
+           <h4>Follow Us</h4>
+
+           <a href="#">LinkedIn</a>
+           <a href="#">Instagram</a>
+           <a href="#">Facebook</a>
+           <a href="#">X (Twitter)</a>
+           <a href="#">YouTube</a>
+
+       </div> -->
+       <div class="footer-links">
+
+   <h4>Follow Us</h4>
+
+   <div class="social-icons">
+
+       <a href="https://www.linkedin.com/company/comit" target="_blank" aria-label="LinkedIn">
+           <i class="fab fa-linkedin-in"></i>
+       </a>
+
+       <a href="https://www.instagram.com/comit.in" target="_blank" aria-label="Instagram">
+           <i class="fab fa-instagram"></i>
+       </a>
+
+       <a href="https://www.facebook.com/comit.in" target="_blank" aria-label="Facebook">
+           <i class="fab fa-facebook-f"></i>
+       </a>
+
+       <a href="https://x.com/comit_in" target="_blank" aria-label="X">
+           <i class="fab fa-x-twitter"></i>
+       </a>
+
+       <a href="https://www.youtube.com/@comit" target="_blank" aria-label="YouTube">
+           <i class="fab fa-youtube"></i>
+       </a>
+
+   </div>
+
+</div>
+
+   </div>
+
+   <div class="footer-bottom">
+
+       © 2026 COMIT. All Rights Reserved.
+
+       <br>
+
+       Made with ❤️ in India 🇮🇳
+
+   </div>
+
+</footer>
+
+
+
+
+
+
+<script>
+
+function openModal(){
+
+
+document.getElementById("waitlistModal").style.display="block";
+
+
+}
+
+function closeModal(){
+
+
+document.getElementById("waitlistModal").style.display="none";
+
+
+}
+
+window.onclick=function(event){
+
+
+let modal=document.getElementById("waitlistModal");
+
+if(event.target==modal){
+
+    modal.style.display="none";
+
+}
+
+
+}
+
+document.getElementById("waitlistForm").addEventListener("submit",function(e){
+
+
+e.preventDefault();
+
+alert("🎉 Thank you for joining COMIT! We'll notify you at launch.");
+
+closeModal();
+
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>
